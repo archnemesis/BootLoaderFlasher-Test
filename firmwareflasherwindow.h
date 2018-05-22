@@ -16,6 +16,7 @@ class FirmwareFlasherWindow : public QMainWindow
 public:
     explicit FirmwareFlasherWindow(QWidget *parent = 0);
     ~FirmwareFlasherWindow();
+    void setSerialOptionsVisible(bool visible);
 
 private slots:
     void on_btnChooseFile_clicked();

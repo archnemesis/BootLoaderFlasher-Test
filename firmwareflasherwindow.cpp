@@ -28,11 +28,27 @@ FirmwareFlasherWindow::FirmwareFlasherWindow(QWidget *parent) :
     for (QSerialPortInfo port : ports) {
         ui->cboPort->addItem(port.systemLocation());
     }
+
+    setSerialOptionsVisible(false);
 }
 
 FirmwareFlasherWindow::~FirmwareFlasherWindow()
 {
     delete ui;
+}
+
+void FirmwareFlasherWindow::setSerialOptionsVisible(bool visible)
+{
+    ui->cboDataBits->setVisible(visible);
+    ui->lblDataBitsLabel->setVisible(visible);
+    ui->cboParity->setVisible(visible);
+    ui->lblParityLabel->setVisible(visible);
+    ui->cboSpeed->setVisible(visible);
+    ui->lblSpeedLabel->setVisible(visible);
+    ui->cboFlowControl->setVisible(visible);
+    ui->lblFlowControlLabel->setVisible(visible);
+    ui->cboStopBits->setVisible(visible);
+    ui->lblStopBitsLabel->setVisible(visible);
 }
 
 void FirmwareFlasherWindow::on_btnChooseFile_clicked()

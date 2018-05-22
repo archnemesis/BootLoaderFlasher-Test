@@ -36,7 +36,7 @@
         </widget>
        </item>
        <item row="1" column="0">
-        <widget class="QLabel" name="label_2">
+        <widget class="QLabel" name="lblSpeedLabel">
          <property name="text">
           <string>Speed</string>
          </property>
@@ -44,6 +44,9 @@
        </item>
        <item row="1" column="1">
         <widget class="QComboBox" name="cboSpeed">
+         <property name="currentIndex">
+          <number>5</number>
+         </property>
          <item>
           <property name="text">
            <string>1200</string>
@@ -87,7 +90,7 @@
         </widget>
        </item>
        <item row="2" column="0">
-        <widget class="QLabel" name="label_3">
+        <widget class="QLabel" name="lblParityLabel">
          <property name="text">
           <string>Parity</string>
          </property>
@@ -113,7 +116,7 @@
         </widget>
        </item>
        <item row="4" column="0">
-        <widget class="QLabel" name="label_4">
+        <widget class="QLabel" name="lblStopBitsLabel">
          <property name="text">
           <string>Stop Bits</string>
          </property>
@@ -134,7 +137,7 @@
         </widget>
        </item>
        <item row="5" column="0">
-        <widget class="QLabel" name="label_5">
+        <widget class="QLabel" name="lblFlowControlLabel">
          <property name="text">
           <string>Flow Control</string>
          </property>
@@ -160,7 +163,7 @@
         </widget>
        </item>
        <item row="3" column="0">
-        <widget class="QLabel" name="label_7">
+        <widget class="QLabel" name="lblDataBitsLabel">
          <property name="text">
           <string>Data Bits</string>
          </property>
